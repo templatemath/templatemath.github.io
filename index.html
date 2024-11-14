@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Training and Evaluating Language Models with Template-based Data Generation</title>
+  <link rel="icon" type="image/x-icon" href="static/images/iiis.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Training and Evaluating Language Models with Template-based Data Generation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://yifzhang.com" target="_blank">Yifan Zhang</a>,</span>
+                <span class="author-block">
+                  <a href="" target="">et al.</a>,</span>
+
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Tsinghua University</span>
+
+<!--                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>-->
+                  </div>
+
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://github.com/iiis-ai/TemplateMath/blob/main/TemplateMath_Part_I.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+
+                                      <!-- ArXiv abstract Link -->
+                      <span class="link-block">
+                        <a href="https://github.com/iiis-ai/TemplateMath" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="ai ai-arxiv"></i>
+                        </span>
+                        <span>arXiv</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+<!--                    <span class="link-block">-->
+<!--                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"-->
+<!--                      class="external-link button is-normal is-rounded is-dark">-->
+<!--                      <span class="icon">-->
+<!--                        <i class="fas fa-file-pdf"></i>-->
+<!--                      </span>-->
+<!--                      <span>Supplementary</span>-->
+<!--                    </a>-->
+<!--                  </span>-->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/iiis-ai/TemplateMath" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser figure-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/cr-illustration-no-caption.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-justified">
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser figure -->
+
+
+
+<!-- Teaser video-->
+<!--<section class="hero teaser">-->
+<!--  <div class="container is-max-desktop">-->
+<!--    <div class="hero-body">-->
+<!--      <video poster="" id="tree" autoplay controls muted loop height="100%">-->
+<!--        &lt;!&ndash; Your video here &ndash;&gt;-->
+<!--        <source src="static/videos/banner_video.mp4"-->
+<!--        type="video/mp4">-->
+<!--      </video>-->
+<!--      <h2 class="subtitle has-text-centered">-->
+<!--        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. -->
+<!--      </h2>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!-- End teaser video -->
+
+<!-- Paper abstract-->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The rapid advancement of large language models (LLMs) such as GPT-3, PaLM, and Llama has significantly transformed natural language processing, 
+            showcasing remarkable capabilities in understanding and generating language. However, these models often struggle with tasks requiring complex 
+            reasoning, particularly in mathematical problem-solving, due in part to the scarcity of large-scale, high-quality, domain-specific datasets 
+            necessary for training sophisticated reasoning abilities. To address this limitation, we introduce Template-based Data Generation (TDG),
+             a novel approach that leverages LLMs (GPT-4) to automatically generate parameterized meta-templates, which are then used to synthesize a vast 
+             array of high-quality problems and solutions. Leveraging TDG, we create TemplateMath Part I: TemplateGSM, a dataset comprising over 7 million 
+             synthetically generated grade school math problems—each accompanied by code-based and natural language solutions—with the potential to generate 
+             an effectively unlimited number more. This dataset alleviates the scarcity of large-scale mathematical datasets and serves as a valuable resource
+              for pre-training, fine-tuning, and evaluating LLMs in mathematical reasoning. Our method not only enables the generation of virtually infinite 
+              data but also elevates data augmentation to a new level by using GPT-4 for meta-template generation, ensuring diverse and high-quality problem 
+              structures. The TemplateMath Part I: TemplateGSM dataset is publicly available at https://huggingface.co/datasets/math-ai/TemplateGSM.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract-->
+
+<!-- A section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- A subsection -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Template-based Data Generation</h2>
+        <div class="content has-text-justified">
+          <p>
+            Template-based Data Generation (TDG) is a method designed to systematically produce a vast array of mathematical problems along 
+            with their corresponding solutions by leveraging parameterized templates. To elevate data augmentation to a new level, we employ
+             GPT-4 to generate these meta-templates, capturing a wide variety of problem structures and linguistic styles. By varying parameters
+             within these GPT-4-generated templates, TDG ensures both scalability and quality in the generated data. This approach enables the 
+             creation of diverse and complex problem sets, which are essential for training and evaluating large language models in mathematical
+              reasoning tasks.
+          </p>
+        </div>
+
+        <br>
+
+        <section class="hero teaser">
+          <div class="container is-max-desktop">
+            <div class="hero-body">
+              <img src="static/images/TDG.png" alt="MY ALT TEXT" style="max-width: 50%; display: block; margin: auto;"/>
+              <h2 class="subtitle has-text-justified">
+              </h2>
+            </div>
+          </div>
+        </section>
+
+        <h2 class="title is-4">Main Contributions</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            <b>Template-based Data Generation (TDG)</b> We introduce TDG, a scalable method for generating an effectively infinite amount of high-quality, domain-specific data using parameterized templates generated by GPT-4.           
+          </p>
+          <p>
+            <b>Elevated Data Augmentation:</b> By leveraging GPT-4 to create meta-templates, we advance data augmentation to a new level, ensuring a diverse and rich set of problem structures for data synthesis. 
+          </p>
+          <p>
+            <b> Creation of TemplateGSM Dataset </b> We develop TemplateGSM, a dataset comprising over 7 million synthetically generated math problems with verified solutions, addressing the scarcity of large-scale mathematical datasets. 
+          </p>
+          <p>
+            <b> Enhancement of LLM Performance </b> We demonstrate the efficacy of the generated data for pre-training, fine-tuning, and evaluating LLMs, enhancing their performance in mathematical reasoning tasks. 
+          </p>
+          <p>
+            <b> Precise Supervision through Code Execution </b> We provide insights into how TDG offers precise supervision through code execution and verification, promoting the development of models with improved understanding and problem-solving abilities. 
+          </p>
+
+        </div>
+
+<!--         <section class="hero teaser">
+          <div class="container is-max-desktop">
+            <div class="hero-body">
+              <img src="static/images/figure1-2-math.png" alt="MY ALT TEXT" style="max-width: 80%; display: block; margin: auto;"/>
+              <h2 class="subtitle has-text-justified">
+              </h2>
+            </div>
+          </div>
+        </section> -->
+
+      </div>
+    </div>
+    <!-- End a subsection -->
+
+  </div>
+</section>
+<!-- End a section -->
+
+<!-- Image carousel -->
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--       <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--          First image description.-->
+<!--        </h2>-->
+<!--      </div>-->
+<!--      <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--          Second image description.-->
+<!--        </h2>-->
+<!--      </div>-->
+<!--      <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--         Third image description.-->
+<!--       </h2>-->
+<!--     </div>-->
+<!--     <div class="item">-->
+<!--      &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>-->
+<!--      <h2 class="subtitle has-text-centered">-->
+<!--        Fourth image description.-->
+<!--      </h2>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      &lt;!&ndash; Paper video. &ndash;&gt;-->
+<!--      <h2 class="title is-3">Video Presentation</h2>-->
+<!--      <div class="columns is-centered has-text-centered">-->
+<!--        <div class="column is-four-fifths">-->
+<!--          -->
+<!--          <div class="publication-video">-->
+<!--            &lt;!&ndash; Youtube embed code here &ndash;&gt;-->
+<!--            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title is-3">Another Carousel</h2>-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--        <div class="item item-video1">-->
+<!--          <video poster="" id="video1" autoplay controls muted loop height="100%">-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel1.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-video2">-->
+<!--          <video poster="" id="video2" autoplay controls muted loop height="100%">-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel2.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-video3">-->
+<!--          <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel3.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title">Poster</h2>-->
+
+<!--      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">-->
+<!--          </iframe>-->
+<!--        -->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Citation</h2>
+      <p>
+        Please cite the paper and star this <a href="https://github.com/meta-prompting/meta-prompting" target="_blank">repo</a> if you use Meta Prompting (MP) and find it interesting/useful, thanks! 
+      </p>
+      <pre><code>@article{zhang2023meta,
+  title={Meta Prompting for AGI Systems},
+  author={Zhang, Yifan and Yuan, Yang and Yao, Andrew Chi-Chih},
+  journal={arXiv preprint arXiv:2311.11482},
+  year={2023}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+            You are free to borrow the code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
