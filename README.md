@@ -1,3 +1,3 @@
 # TemplateMath
 
-https:/templatemath.github.io 
+https://templatemath.github.io 
